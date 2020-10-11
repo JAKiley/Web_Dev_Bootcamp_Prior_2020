@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>Lecture 35</title>
+</head>
+<body>
+	<form>
+		<h1>Register</h1>
+
+		<label for="FirstName">First Name:</label>
+		<input name="first" id="FirstName" type="text" Placeholder="John" required>
+		<label for="LastName">Last Name:</label>
+		<input name="last" id="LastName" type="text" Placeholder="Smith" required>
+
+
+		<div>
+			<label for="GenderChoice1">Male</label>
+			<input type="radio" id="GenderChoice1"
+			name="Gender" value="male">
+			<label for="GenderChoice2">Female</label>
+			<input type="radio" id="GenderChoice2"
+			name="Gender" value="female">
+
+			<label for="GenderChoice3">Other</label>
+			<input type="radio" id="GenderChoice3"
+			name="Gender" value="Other">
+		</div>
+
+		<div>
+			<label for="Email">Email:</label>
+			<input id="Email" name="Email" type="email" Placeholder="Your Email" required>
+			<label for="Password">Password:</label>
+			<input id="Password" name="Password" type="password" pattern=".{5,10}" placeholder="Your Password" required title="Password must be 5 to 10 Characters">
+		</div>
+
+		<div>
+			<label for="Month">Birthday:</label>
+			<select id="Month"  Name="Month">
+				<option value="Month" selected>Month</option>
+				<option value="Jan">Jan</option>
+				<option value="Feb">Feb</option>
+				<option value="Mar">Mar</option>
+			</select>	
+			<label for="Day"></label>
+			<select id="Day"  Name="Day">
+				<option value="Day" selected>Day</option>
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+			</select>
+			<label for="Year"></label>
+			<select id="Year"  Name="Year">
+				<option value="Year" selected>Year</option>
+				<option value="1980">1980</option>
+				<option value="1981">1981</option>
+				<option value="1982">1982</option>
+			</Select>
+		</div>
+
+		<div>
+			<label for="Terms">I agree to terms and conditions</label>
+			<input id="Terms" name="Terms" type="Checkbox">
+		</div>
+		<button>Submit</button>
+	</form>
+
+</body>
+</html>
